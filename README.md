@@ -111,6 +111,7 @@ Mongodb é um banco de dados NOSQL (não relacional) que surgiu em 2009 e foi de
 
 ```javascript
      $ show databases;
+     $ use alunas; (nome do arq)
      $ show collections;
      $ db.createCollection("alunas");
      $ db.nome_da_colecao.insert({nome: "beatriz", idade: "25"});
@@ -215,7 +216,7 @@ Uma breve introdução sobre classes e objetos, para que possamos entender melho
 Quando possuímos uma classe, podemos utilizar a palavra reservada `new`  para instanciar um objeto, ou seja, construir um novo documento a partir da classe( nossa `Schema` ),  afinal, não queremos que a música da Anitta tenha altere as informações da música da Ludmila né? 🤔
 
 ```javascript
-const musica = new MusicaModel({
+const musica = new MusicaSchema({
     nome: 'Cat',
     artista: 'Gatinho',
     album: 'Cat Aleatorio',
