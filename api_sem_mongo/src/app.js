@@ -16,3 +16,9 @@ app.post("/", (req, res) => {
 
     res.status(201).json(novaMusica)
 })
+
+app.get("/todas", (req, res)=> {
+    res.status(200).json(musicaDb)
+})
+
+module.exports = app
