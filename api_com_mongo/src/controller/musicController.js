@@ -33,7 +33,12 @@ const createMusic = async (request, response) => {
 
 const findAllMusic = async(request, response) => {
     try {
-        const allMusics = await MusicModel.find()
+        const allMusics = await MusicModel.find({
+            artista: artist,
+            titulo: title
+        })
+
+        
         response.status(200).json(allMusics)
     } catch (error) {
         response.status(500).json({ message: error.message })
