@@ -42,7 +42,7 @@ const MusicSchema = mongoose.Schema({
     anoDeLancamento: Date,
     clipe: Boolean,
     imagens: [String],
-    curtidas: Number
+    curtidas: Number,
 }, { timestamps : true })
 
 const Model = mongoose.model('musica', MusicSchema)
