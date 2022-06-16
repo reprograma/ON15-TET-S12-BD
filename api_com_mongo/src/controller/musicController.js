@@ -32,8 +32,20 @@ const createMusic = async (request, response) => {
 }
 
 const findAllMusic = async(request, response) => {
+    // retornar todos 
+    // e/ou retorna por artista
+    // e/ou retornar por titulo
+    const { artist, title } = request.query
+    
+    let query = {}
+    
+    // music.aritsta.toLowerCase().includes(artist.toLowercase()) -> ignore case
+    if (artist) query.artista = new RegExp(artist, 'i')
+
+    if (title) query.titulo = new RegExp(title, 'i')
+
     try {
-        const allMusics = await MusicModel.find()
+        const allMusics = await MusicModel.find(query)
         response.status(200).json(allMusics)
     } catch (error) {
         response.status(500).json({ message: error.message })
@@ -49,6 +61,39 @@ const findById = async (request, response) =>  {
     }
 }
 
+// exemplo de consulta com data
+const findOneByLounchYear = async (request, reponse ) => {
+    try {
+        const findMusic = await MusicModel.findOne({
+            anoDeLancamento:  request.query.lounchYear
+        })
+
+        reponse.status(200).json(findMusic)
+    } catch (error) {
+        reponse.status(500).json({ message: error.message })
+    }
+}
+
+/**
+ * 
+ * embora não seja coerente com a nossa entidade, fica como exemplo para consulta
+ * por exemplo com cpf, cnpj, numero de prontuario, codigo de barras,
+ * nome fantasia..., sim, funciona com array!!
+ */
+const findByOneCategory = async (request, response) => {
+    try {
+        const findMusic = await MusicModel.findOne({
+            categoria: request.params.name
+        })
+
+        response.status(200).json(findMusic)
+
+    } catch (error) {
+        response.status(500).json({ message: error.message})
+    }
+}
+
 module.exports = {
-    createMusic, findAllMusic, findById
+    createMusic, findAllMusic, findById,
+     findOneByLounchYear, findByOneCategory
 }
