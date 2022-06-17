@@ -230,6 +230,38 @@ const findByOccupation = async (request, response) => {
         }
             }
     
+            const deleteArtist = async(request, response) => {
+    
+                try {
+                    const idRequest = request.params.id
+                    const findArtist = await ArtistModel.findById(idRequest)
+                    const deleteById = await ArtistModel.findByIdAndDelete(idRequest)
+                    
+                           
+                    if (findArtist == undefined) {
+                        throw {
+                            statusCode: 404,
+                            message: "Não encontramos resultados com essa busca.",
+                            details: "Em nosso banco de dados, não existem informações compatíveis com essa busca.",
+                            request: request.params.id
+                        }}
+        
+                
+                    response.status(200).json([{
+                        "mensagem": "Artista deletado com sucesso",
+                        "item-deletado" : deleteById
+                        
+                    }])
+                    
+                } catch (error) {
+                    if (error.statusCode) {
+                        response.status(error.statusCode).json(error)
+                    } else {
+                        response.status(500).json({ message: error.message })
+                    }
+                }
+            
+            }
     
 
 
@@ -240,6 +272,7 @@ module.exports = {
     findByName,
     findByOccupation,
     updateArtistItems,
-    updateAllArtistItems
+    updateAllArtistItems,
+    deleteArtist
 
 }

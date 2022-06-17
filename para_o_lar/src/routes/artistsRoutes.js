@@ -18,4 +18,6 @@ router.patch("/update_item/:id", controller.updateArtistItems);
 
 router.put("/update_all/:id", controller.updateAllArtistItems);
 
+router.delete("/delete_by_id/:id", controller.deleteArtist);
+
 module.exports = router
