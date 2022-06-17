@@ -78,11 +78,8 @@ const findByName = async (request, response) => {
         filterAllResults.push(filterAll)
 
         for (let item of filterAllResults) {
-            let artists = item
-
-            for (let artist of artists) {
-                let artistInfo = artist
-                filterAllItems.push(artistInfo)
+            for (let artist of item) {
+                filterAllItems.push(artist)
             }
         }
 
