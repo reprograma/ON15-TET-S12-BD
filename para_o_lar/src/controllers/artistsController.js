@@ -29,36 +29,86 @@ const findAllArtists = async (request, response) => {
     const {birthName, artisticName} = request.query
     let query =  {}
 
-    if(birthName) query.birthName = new RegExp(birthName, "i") 
-    if(artisticName) query.artisticName = new RegExp(artisticName, "i") 
+    
 
 try {
+    if(birthName) {
+        query.birthName = new RegExp(birthName, "i")
+        const allArtists = await ArtistModel.find(query)
+
+        if (allArtists.length === 0) {
+            throw {
+                statusCode: 404,
+                message: "Não encontramos resultados com essa busca.",
+                details: "Em nosso banco de dados, não existem informações compatíveis com essa busca.",
+                query: request.query
+            }
+
+     }
+    }
+
+
+    if(artisticName) {
+        query.artisticName = new RegExp(artisticName, "i") 
+        const allArtists = await ArtistModel.find(query)
+
+        if (allArtists.length === 0) {
+            throw {
+                statusCode: 404,
+                message: "Não encontramos resultados com essa busca.",
+                details: "Em nosso banco de dados, não existem informações compatíveis com essa busca.",
+                query: request.query
+            }
+
+     }
+    }
 
     
     const allArtists = await ArtistModel.find(query)
 
     response.status(200).json(allArtists)
 } catch (error) {
-    response.status(500).json({message: error.message})
-}
+    console.error(error)
+        console.log("Busca recebida: ", request.query)
+        if (error.statusCode) {
+            response.status(error.statusCode).json(error)
+        } else {
+            response.status(500).json({ message: error.message })
+        }
+    }
 }
 
 const findByOccupation = async (request, response) => {
     const {occupation} = request.query
     let query =  {}
-    if(occupation) query.occupation = new RegExp(occupation, "i")
     try {
         
-        const findArtist = await ArtistModel.find(query)
-        
-        if(findArtist.length == 0) throw new Error ("Não foi possível encontrar artistas com essa ocupação.")
+        if(occupation) {
+        query.occupation = new RegExp(occupation, "i") 
+     }
+     const findArtist = await ArtistModel.find(query)
+     
+     if (findArtist.length === 0) {
+        throw {
+            statusCode: 404,
+            message: "Não encontramos resultados com essa busca.",
+            details: "Em nosso banco de dados, não existem informações compatíveis com essa busca.",
+            query: request.query
+        }}
         
         response.status(200).json(findArtist)
 
     } catch (error) {
-        response.status(500).json({message: error.message})
+        console.error(error)
+        console.log("Busca recebida: ", request.query)
+        if (error.statusCode) {
+            response.status(error.statusCode).json(error)
+        } else {
+            response.status(500).json({ message: error.message })
+        }
     }
-}
+    }
+
 
 
 module.exports = {
