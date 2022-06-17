@@ -32,10 +32,7 @@ const ArtistSchema = mongoose.Schema({
         type: [String],
         required: true
     },
-    awards: {
-        type:Boolean || [String],
-        required: true
-    },
+    awards: [String],
     alive:{
         type: Boolean,
         required: true
