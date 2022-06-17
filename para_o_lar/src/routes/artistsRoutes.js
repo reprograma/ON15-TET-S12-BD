@@ -8,6 +8,14 @@ router.post("/new_artist", controller.createArtist);
 
 router.get("/all", controller.findAllArtists);
 
+router.get("/by_id/:id", controller.findById);
+
+router.get("/by_name", controller.findByName);
+
 router.get("/occupation", controller.findByOccupation);
+
+router.patch("/update_item/:id", controller.updateArtistItems);
+
+router.put("/update_all/:id", controller.updateAllArtistItems);
 
 module.exports = router
