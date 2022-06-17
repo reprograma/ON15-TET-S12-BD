@@ -1,31 +1,27 @@
-const { response } = require("express")
-
 const express = require("express")
 
-const app = express()
 require("dotenv").config()
 
 app.use(express.json)
 const musicaDb =[]
 
 
-app.post("/",(request, response)=>{
-    /** musica 
-    * artista -> string
-    *album-> string
-    *titulo -> string
-    */
+const express = require('express')
+require('dotenv').config()
+const cors = require('cors')
+const db = require('./database/mongooseConnect')
+const musicRoutes = require('./routes/musicRoutes')
 
-    const {artista, album, titulo} = request.body
-    const novaMusica = {
-        artista, album, titulo, id: musicaDb.length
-    }
-    musicaDb.push(novaMusica)
-    response.status(201).json(novaMusica)
-})
+const app = express()
 
-app.get("/todas", (request, response) =>{
-    response.status(200).json(musicaDb)
-})
+// configuracao
+app.use(express.json())
+app.use(cors())
+
+// base de dados
+db.connect()
+
+// rotas
+app.use(musicRoutes)
 
 module.exports = app
