@@ -73,6 +73,7 @@ const findByName = async (request, response) => {
     try {
         let filterAllResults = []
         let filterAllItems = []
+        
         let filterAll = await ArtistModel.find()
 
         filterAllResults.push(filterAll)
