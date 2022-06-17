@@ -2,12 +2,20 @@
   "name": "api_sem_mongo",
   "version": "1.0.0",
   "description": "",
+<<<<<<< HEAD
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
   "keywords": [],
+=======
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "nodemon server.js"
+  },
+>>>>>>> 39c12350c35b2ab19f68601962a22c5122a0b2ae
   "author": "",
   "license": "ISC",
   "dependencies": {

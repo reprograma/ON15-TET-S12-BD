@@ -290,5 +290,5 @@ Na programação, existem tipos primários, que são responsáveis por definir o
  - [LINKEDIN](https://www.linkedin.com/in/beatriz-ramerindo/)
  - [GITHUB](https://github.com/isjanebia)
  - [INSTAGRAN](https://www.instagram.com/isjanebea/)
- - [site] [beatriz.ramerindo.com.br](beatriz.ramerindo.com.br)
+ - [site] [beatriz.rarmerindo.com.br](beatriz.ramerindo.com.br)
  - [email] bea@ramerindo.com.br
