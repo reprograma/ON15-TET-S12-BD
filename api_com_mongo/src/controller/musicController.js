@@ -45,7 +45,6 @@ const findAllMusic = async(request, response) => {
     if (title) query.titulo = new RegExp(title, 'i')
 
     try {
-        const allMusics = await MusicModel.find(query)
         response.status(200).json(allMusics)
     } catch (error) {
         response.status(500).json({ message: error.message })
