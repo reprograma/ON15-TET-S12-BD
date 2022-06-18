@@ -61,12 +61,12 @@ const findByName = async (require,response) => {
 
     } catch (error)
 
-reponse.status(500).json ({message: error.message})
+response.status(500).json ({message: error.message})
     
 }
 
 module.exports = {
     createArtist,
     findAllArtists,
-    findbyName
+    findByName
 }
