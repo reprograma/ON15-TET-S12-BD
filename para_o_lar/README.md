@@ -186,13 +186,13 @@ Para que fosse possível a execução desse projeto, foi necessária a utilizaç
 
 <div align = "justify">
 
-- [package-lock.json] - Especifica a versão e suas dependências;
+- [package-lock.json](https://github.com/Geankre/ON15-TET-S12-BD/blob/Geankre/para_o_lar/package-lock.json) - Especifica a versão e suas dependências;
 <br>
 
-- [package.json] - Srquivo de configuração utilizado para estipular e configurar dependências;
+- [package.json](https://github.com/Geankre/ON15-TET-S12-BD/blob/Geankre/para_o_lar/package.json) - Srquivo de configuração utilizado para estipular e configurar dependências;
 <br>
 
-- [.gitignore] - Arquivo que lista quais arquivos ou pastas o Git deve ignorar;
+- [.gitignore](https://github.com/Geankre/ON15-TET-S12-BD/blob/Geankre/para_o_lar/.gitignore) - Arquivo que lista quais arquivos ou pastas o Git deve ignorar;
 <br>
 
 </div>
