@@ -192,7 +192,7 @@ Para que fosse possível a execução desse projeto, foi necessária a utilizaç
 - [package.json] - Srquivo de configuração utilizado para estipular e configurar dependências;
 <br>
 
-- [.gitignore] - Srquivo que lista quais arquivos ou pastas o Git deve ignorar.
+- [.gitignore] - Arquivo que lista quais arquivos ou pastas o Git deve ignorar.
 <br>
 
 </div>
