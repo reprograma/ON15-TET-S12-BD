@@ -240,7 +240,8 @@ Para que fosse possível a execução desse projeto, foi necessária a utilizaç
 
 - Copie o link acima e, no [Postman](https://www.postman.com/downloads/), clique em *Import* -> *Link* (cole o link) -> *Continue* -> *Import*.
 
-</div>
+- Ou forke diretamente para o seu Postman através do link:<div align = "justify"> [![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/20977005-92d3a5cf-f49a-47fd-8cc2-2e239ac95b04?action=collection%2Ffork&collection-url=entityId%3D20977005-92d3a5cf-f49a-47fd-8cc2-2e239ac95b04%26entityType%3Dcollection%26workspaceId%3Dfd948d9e-a939-463f-8094-05c2599f2db5) </div>
+
 
 ###  AUTORAS: 
 
