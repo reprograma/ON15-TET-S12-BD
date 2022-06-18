@@ -207,18 +207,24 @@ Para que fosse possível a execução desse projeto, foi necessária a utilizaç
     $ git clone https://github.com/Geankre/ON15-TET-S12-BD
      ```
 
-2. Digite a linha abaixo para entrar na pasta correta: 
+2. Digite a linha abaixo para entrar na branch correta: 
+
+   ```bash
+    $ git checkout Geankre
+     ```
+
+3. Digite a linha abaixo para entrar na pasta correta: 
 
     ```bash
     $ cd para-o-lar/
     ```
     
-3. Escreva a seguinte linha para instalar as dependências utilizadas nesse projeto: 
+4. Escreva a seguinte linha para instalar as dependências utilizadas nesse projeto: 
 
    ```bash
     $ npm install
     ```
-4. Inicie o servidor, utilizando a frase: 
+5. Inicie o servidor, utilizando a frase: 
 
    ```bash
     $ npm start
@@ -228,7 +234,13 @@ Para que fosse possível a execução desse projeto, foi necessária a utilizaç
 
 <div align = "justify">
 
+###  TESTE: 
 
+- Importe a coleção para teste deste servidor clicando [aqui](https://www.getpostman.com/collections/4c0cfb6fd8ef0b612113)!
+
+- Copie o link acima e, no [Postman](https://www.postman.com/downloads/), clique em *Import* -> *Link* (cole o link) -> *Continue* -> *Import*.
+
+</div>
 
 ###  AUTORAS: 
 
