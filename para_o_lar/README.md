@@ -192,7 +192,7 @@ Para que fosse possível a execução desse projeto, foi necessária a utilizaç
 - [package.json] - Srquivo de configuração utilizado para estipular e configurar dependências;
 <br>
 
-- [.gitignore] - Arquivo que lista quais arquivos ou pastas o Git deve ignorar.
+- [.gitignore] - Arquivo que lista quais arquivos ou pastas o Git deve ignorar;
 <br>
 
 </div>
@@ -230,6 +230,14 @@ Para que fosse possível a execução desse projeto, foi necessária a utilizaç
 
 
 
+###  AUTORAS: 
 
+- [Bruna Celestino](https://github.com/BrunaCelestino)
+<br>
 
+- [Eliza Pimentel](https://github.com/elizapimentel)
+<br>
+
+- [Geankre Souza](https://github.com/Geankre)
+<br>
 
