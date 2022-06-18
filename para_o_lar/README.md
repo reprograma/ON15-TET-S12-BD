@@ -232,6 +232,7 @@ Para que fosse possível a execução desse projeto, foi necessária a utilizaç
 
 <div align = "justify">
 
+###  TESTE: 
 
 - Importe a coleção para teste deste servidor clicando [aqui](https://www.getpostman.com/collections/4c0cfb6fd8ef0b612113)!
 
