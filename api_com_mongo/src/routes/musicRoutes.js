@@ -1,13 +1,19 @@
-const controller = require('../controller/musicController')
+const controller = require("../controllers/musicController.js")
 
-const express = require('express')
+const express = require("express");
 
-const router = express.Router()
+const router = express.Router();
 
-router.post("/music/create", controller.createMusic)
-router.get("/musics", controller.findAllMusic)
-router.get("/musics/lounch_year", controller.findOneByLounchYear)
-router.get("/musics/category/:name", controller.findByOneCategory)
-router.get("/music/:id", controller.findById)
+router.post("/new_music", controller.createMusic);
+
+router.get("/all", controller.findAllMusic);
+
+
+
+router.get("/artist_name", controller.findByArtist);
+
+router.get("/category/:name", controller.findByOneCategory);
+
+router.get("/id/:id", controller.findById)
 
 module.exports = router
