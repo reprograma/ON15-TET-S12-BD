@@ -41,7 +41,7 @@
 Você pode [acessar o código fonte do projeto](https://github.com/mariaftavares/ON15-TET-S12-BD/tree/Maria_Fernanda_Tavares/para_o_lar).
 
 ## Abrir e rodar o projeto
-Primeiro você precisa ter instalado no seu computador `NodeJS` caso ainda não tenha clique [aqui](https://nodejs.org/en/download/) e realize a instalação. Após instalar você pode [clonar](https://docs.github.com/pt/repositories/creating-and-managing-repositories/cloning-a-repository) o repositorio na sua maquina você e abrir o editor de código-fonte da sua preferência, como por exemplo [VSCODE](https://code.visualstudio.com).
+Primeiro você precisa ter instalado no seu computador `NodeJS` caso ainda não tenha clique [aqui](https://nodejs.org/en/download/) e realize a instalação. Após instalar você pode [clonar](https://docs.github.com/pt/repositories/creating-and-managing-repositories/cloning-a-repository) o repositorio na sua maquina e abrir o editor de código-fonte da sua preferência, como por exemplo [VSCODE](https://code.visualstudio.com).
 Para abrir o projeto no `VSCODE`, é necessário:  
 - Ir na barra de menus e selecionar a opção `file` ou `arquivo`;
 - Selecione a opção `open folder ...` e procure a pasta onde está o projeto;
