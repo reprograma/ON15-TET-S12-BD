@@ -48,13 +48,13 @@ const findById = async (req, res) => {
         .findById(id)       
         .exec((err, artists) => {
           if (err) {
-            res.status(400).send({ message: `${err.message} - Id informado está fora do padrão.` });
+            return res.status(400).send({ message: `${err.message} - Id informado está fora do padrão.` });
           } else if (artists == null) {
-            res.status(404).send('Id do artista não encontrado na base de dados');
+            return res.status(404).send('Id do artista não encontrado na base de dados');
           } else {
-            res.status(200).send(artists);
+            return res.status(200).send(artists);
           }
-        });
+        })
 
     } catch (error) {
         res.status(500).json({message: error.message})
