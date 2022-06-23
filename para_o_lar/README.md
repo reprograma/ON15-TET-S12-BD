@@ -210,7 +210,7 @@ Para que fosse possível a execução desse projeto, foi necessária a utilizaç
 2. Digite a linha abaixo para entrar na branch correta: 
 
    ```bash
-    $ git checkout Geankre
+    $ git checkout Eliza
      ```
 
 3. Digite a linha abaixo para entrar na pasta correta: 
