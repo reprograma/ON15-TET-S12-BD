@@ -204,7 +204,7 @@ Para que fosse possível a execução desse projeto, foi necessária a utilizaç
 1. Entre na pasta onde você deseja clonar o repositório. Abra o **git** nela e digite: 
 
     ```bash
-    $ git clone https://github.com/Geankre/ON15-TET-S12-BD
+    $ git clone https://github.com/elizapimentel/ON15-TET-S12-BD
      ```
 
 2. Digite a linha abaixo para entrar na branch correta: 
