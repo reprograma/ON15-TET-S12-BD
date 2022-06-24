@@ -1,4 +1,3 @@
-const { query } = require("express")
 const ArtistModel = require("../models/artistsModels")
 
 const createArtist = async (request, response)=> {
