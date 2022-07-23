@@ -1,5 +1,5 @@
 const express = require ('express')
-const ap = express
+const app = express ()
 
 require('dotenv').config()
 
@@ -17,4 +17,8 @@ app.post("/",(request, response)=> {
     musicaDb.push(novaMusica)
     response.status(201).json(novaMusica)
 })
-module.exports
+
+app.get("/todas", (request, response) => {
+    response.status(200).json(musicaDb)
+})
+module.exports = app

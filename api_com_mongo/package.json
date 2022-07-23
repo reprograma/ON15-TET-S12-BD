@@ -1,8 +1,8 @@
 {
-  "name": "api_sem_mongo",
+  "name": "api_com_mongo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "roteiro.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
@@ -14,6 +14,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "mongoose": "^6.3.6",
     "nodemon": "^2.0.16"
   }
 }

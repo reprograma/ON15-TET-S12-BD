@@ -1,0 +1,22 @@
+{
+  "name": "on15-tet-s12-bd",
+  "version": "1.0.0",
+  "description": "Turma Online Todas em Tech - Back-end | Semana 12: Introdução ao Banco de Dados e Integração",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianaLohanna/ON15-TET-S12-BD.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrianaLohanna/ON15-TET-S12-BD/issues"
+  },
+  "homepage": "https://github.com/AdrianaLohanna/ON15-TET-S12-BD#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

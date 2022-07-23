@@ -1,0 +1,35 @@
+1- Criar as pastas da API SRC , controller, models e routes
+2-arquivo app.js
+3- arquivo server.js 
+4- criar arquivos  ...controller 
+ ... models e 
+.. routes - 
+5-
+
+
+
+1- Eu vou utilizar como lingaugem de desenvolvimento o JS - Java Script, para construir uma API com Node JS
+2- Requisitos da API: 
+
+- MongoDB
+- NodeJs
+
+3- Dependências:
+
+- Express: é um  framework( uma ferramenta), que traz uma solução (API) pronta e generica para o desenvolvimento de web API, traz uma API pronta para usar a partir da sua necessidade.
+- Nodemon : Uma biblioteca de sistemas que serve para reiniciar o servidor durante o desenvolvimento ao alterar um arquivo.
+
+- cors: serve para controlar o acesso(segurança) a API, ou seja compartilhar os recursos(imagem,video,informação, salvar, atuzaliar,deletar, incluir) do servidor.
+
+- mongoose: ORM (é uma ferramenta que permite gerenciar um banco de dados com lingaugem de programação) para modelar os dados para MongoDB
+
+- dotENv : permite omitir os segredos(senha de banco de dados, credencias, porta) da API.
+
+4- Estrutura
+
+- app.js
+- server.js
+- mongoDbConect.js
+-
+
+
