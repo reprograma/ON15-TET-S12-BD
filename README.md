@@ -215,7 +215,7 @@ Uma breve introdução sobre classes e objetos, para que possamos entender melho
 Quando possuímos uma classe, podemos utilizar a palavra reservada `new`  para instanciar um objeto, ou seja, construir um novo documento a partir da classe( nossa `Schema` ),  afinal, não queremos que a música da Anitta tenha altere as informações da música da Ludmila né? 🤔
 
 ```javascript
-const musica = new MusicaModel({
+const musica = new MusicaSchema({
     nome: 'Cat',
     artista: 'Gatinho',
     album: 'Cat Aleatorio',
